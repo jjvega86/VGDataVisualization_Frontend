@@ -1,13 +1,17 @@
 import Header from "./components/Header";
-import { Container } from "@hope-ui/solid";
+import { Box, Container } from "@hope-ui/solid";
 import NavBar from "./components/NavBar";
+import SearchGames from "./components/SearchGames";
 
 function App() {
   return (
     <>
       <NavBar />
       <Container centerContent>
-        <Header />
+        <Box>
+          <Header />
+          <SearchGames />
+        </Box>
       </Container>
     </>
   );
